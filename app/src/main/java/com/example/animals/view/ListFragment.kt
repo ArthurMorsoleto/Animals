@@ -61,6 +61,14 @@ class ListFragment : Fragment() {
             layoutManager = GridLayoutManager(context, 2)
             adapter = listAdapter
         }
+
+        refreshLayout.setOnRefreshListener {
+            rcAnimalsList.visibility = View.GONE
+            tvListError.visibility = View.GONE
+            loadingView.visibility = View.VISIBLE
+            viewModel.refresh()
+            refreshLayout.isRefreshing = false
+        }
     }
 
 }
