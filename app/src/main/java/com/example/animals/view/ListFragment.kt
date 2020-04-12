@@ -66,7 +66,7 @@ class ListFragment : Fragment() {
             rcAnimalsList.visibility = View.GONE
             tvListError.visibility = View.GONE
             loadingView.visibility = View.VISIBLE
-            viewModel.refresh()
+            viewModel.hardRefresh()
             refreshLayout.isRefreshing = false
         }
     }

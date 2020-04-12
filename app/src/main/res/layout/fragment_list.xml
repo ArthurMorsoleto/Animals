@@ -2,10 +2,10 @@
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ListFragment"
-    android:id="@+id/refreshLayout">
+    tools:context=".view.ListFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +15,6 @@
             android:id="@+id/rcAnimalsList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/dimen_8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +24,8 @@
             android:id="@+id/tvListError"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             android:text="@string/an_error_occured_while_loading_data"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/rcAnimalsList"
             app:layout_constraintEnd_toEndOf="@+id/rcAnimalsList"
             app:layout_constraintStart_toStartOf="@+id/rcAnimalsList"
