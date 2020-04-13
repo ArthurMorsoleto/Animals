@@ -2,5 +2,9 @@
 <resources>
     <dimen name="dimen_0dp">0dp</dimen>
     <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_96dp">96dp</dimen>
     <dimen name="default_200dp">200dp</dimen>
 </resources>

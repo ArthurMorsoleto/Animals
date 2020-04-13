@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.fragment_list.*
 class ListFragment : Fragment() {
 
     private lateinit var viewModel: ListViewModel
+
     private var listAdapter = AnimalListAdapter(arrayListOf())
 
     private val animalListDataObserver = Observer<List<Animal>> { list ->
@@ -27,7 +28,7 @@ class ListFragment : Fragment() {
 
     private val loadingLiveDataObserver = Observer<Boolean> { isLoading ->
         loadingView.visibility = if (isLoading) View.VISIBLE else View.GONE
-        if (isLoading){
+        if (isLoading) {
             tvListError.visibility = View.GONE
             rcAnimalsList.visibility = View.GONE
         }
@@ -51,6 +52,7 @@ class ListFragment : Fragment() {
 
     private fun initView() {
         viewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
+
         viewModel.animalsList.observe(this, animalListDataObserver)
         viewModel.loading.observe(this, loadingLiveDataObserver)
         viewModel.loadError.observe(this, errorLiveDataObserver)
