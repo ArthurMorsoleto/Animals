@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Animals</string>
+    <string name="imagem_do_animal">Imagem do Animal</string>
+    <string name="an_error_occured_while_loading_data">An error occurred while loading data</string>
+    <string name="label_name">Name:</string>
+    <string name="label_location">Location:</string>
+    <string name="label_lifespan">LifeSpan:</string>
+    <string name="label_diet">Diet:</string>
 </resources>

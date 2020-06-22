@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clAnimal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_200dp"
+        android:contentDescription="@string/imagem_do_animal"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAnimalName"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:background="#afff"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAnimal"
+        app:layout_constraintEnd_toEndOf="@+id/ivAnimal"
+        app:layout_constraintStart_toStartOf="@+id/ivAnimal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="ANIMAL NAME" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
