@@ -7,10 +7,10 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class PrefsModule {
+open class PrefsModule {
 
     @Provides
     @Singleton
-    fun provideSharedPreferences(application: Application): SharedPreferencesHelper =
+    open fun provideSharedPreferences(application: Application): SharedPreferencesHelper =
         SharedPreferencesHelper(application)
 }
